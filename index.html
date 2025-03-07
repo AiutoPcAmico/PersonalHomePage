@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      background: black;
+    }
+
+    .bgimg {
+      background-image: url("background.jpg");
+      color: white;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 25px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .topleft {
+      position: absolute;
+      opacity: 100%;
+      top: 40px;
+      left: 40px;
+    }
+
+    .bottomright {
+      position: absolute;
+      opacity: 100%;
+      bottom: 0;
+      right: 40px;
+    }
+
+    .middle {
+      position: absolute;
+      opacity: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    hr {
+      margin: auto;
+      width: 60%;
+    }
+  </style>
+
+  <body>
+    <div class="bgimg">
+      <div class="overlay"></div>
+      <div class="topleft">
+        <img
+          src="aiutopcamico.png"
+          alt="aiutopcamico logo"
+          style="height: 120px"
+        />
+      </div>
+      <div class="middle">
+        <h1>Andrea Felappi</h1>
+        <hr />
+        <p>Coming Soon...</p>
+      </div>
+      <div class="bottomright">
+        <p>A portfolio webpage</p>
+      </div>
+    </div>
+  </body>
+</html>

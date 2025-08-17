@@ -1,13 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
-import background from "./img/background.jpg";
-import { HomePage } from "./Components/HomePage";
+import { NewHomePage } from "./newModel/newHomePage";
 
 function App() {
   return (
-    <div className="bgImg" style={{ backgroundImage: `url(${background})` }}>
-      <div className="overlay" />
-      <HomePage/>
+    <div>
+      <NewHomePage />
     </div>
   );
 }

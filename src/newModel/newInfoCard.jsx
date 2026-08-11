@@ -17,6 +17,7 @@ import VerifiedIcon from "@mui/icons-material/Verified";
 
 import "./newcomponents.css";
 import { MultiElDialog } from "./MultiElDialog.jsx";
+import { PermIdentity } from "@mui/icons-material";
 
 function NewInfoCard() {
   const [multiOpen, setMultiOpen] = useState({
@@ -51,6 +52,13 @@ function NewInfoCard() {
       link: "https://learn.microsoft.com/api/credentials/share/it-it/AndreaFelappi/5F7B24D2A8CB18?sharingId=E5D780378F413A32",
     },
     {
+      name: "Microsoft - Applied Skills: Identity with Microsoft Entra",
+      icon: <PermIdentity />,
+      color: "#0078d4",
+      action: "🔗 Visualizza certificazione",
+      link: "https://learn.microsoft.com/api/credentials/share/it-it/AndreaFelappi/469BC247F3AAE07D?sharingId=E5D780378F413A32",
+    },
+    {
       name: "Microsoft - Azure Developer AZ-204",
       icon: <CloudIcon />,
       color: "#0078d4",
@@ -58,7 +66,7 @@ function NewInfoCard() {
       link: "https://learn.microsoft.com/api/credentials/share/it-it/AndreaFelappi/789051363360F0F2?sharingId=E5D780378F413A32",
     },
     {
-      name: "Cisco - Network Technician",
+      name: "Cisco - Network Technician (in progress)",
       icon: <RouterIcon />,
       color: "green",
       action: "🔗 Visualizza certificazioni",
@@ -222,8 +230,8 @@ function NewInfoCard() {
           multiOpen.object === "certifications"
             ? certifications
             : multiOpen.object === "projects"
-            ? projects
-            : []
+              ? projects
+              : []
         }
         open={multiOpen.isOpen}
         title={multiOpen.title}
